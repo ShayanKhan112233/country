@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+</head>
+<style>
+     *{
+		    margin:0px;
+			padding:0px;
+			box-sizing:border-box;
+			font-family:'puppins',sans-serif;
+		  }
+          body{
+		       display:flex;
+			   justify-content:center;
+			   align-items:center;
+			   min-height:100vh;
+			   background:url('pak.jpg')no-repeat;
+			   background-size:cover;
+			   background-position:center;
+		  }
+          .main{
+            width: 520px;
+            background: transparent;
+            border:1px solid rgba(255, 255, 255, .2);
+		    backdrop-filter:blur(2px);
+			box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 30px 40px;
+            /* align-items: center; */
+          }
+          .input{
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 20px;
+            border:2px solid black;
+            margin-right: 10px;
+            width: 280px;
+            background: transparent;
+            color: #000000;
+            outline: none;
+          }
+          ::placeholder{
+            color: #000000;
+          }
+          .main button{
+            padding: 12px 24px;
+            font-size: 1rem;
+            border:2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            background: transparent;
+            cursor: pointer;
+            color: #000000;
+            font-weight: bold;
+          }
+          .main button:hover{
+            color: rgb(255, 255, 255);
+            background-color: #000000;
+          }
+          .main h2{
+            margin-top: 5%;
+            font-weight: bold;
+          }
+          .main img {
+            margin-top: 5%;
+          }
+          .main p {
+            margin-top: 5%;
+            font-size: 30px;
+            font-weight: bold;
+          }
+</style>
+<body>
+
+    <div class="main">
+        <div>
+            <h1 style="margin-bottom: 5%;">Country Information</h1>
+            <input type="text" class="input" placeholder="Enter country name here">
+            <button onclick="gitdata()">Search</button>
+            <h2 class="cName">Name :</h2>
+            <img src="https://flagcdn.com/w320/pk.png" alt="" class="img">
+            <p class="population">Population :</p>
+        </div>
+
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="jann.js"></script>
+</html>
